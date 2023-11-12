@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum Theme: String, CaseIterable, Identifiable {
-    case bubblegum
+    case mint
     case buttercup
     case indigo
     case lavender
@@ -27,8 +27,8 @@ enum Theme: String, CaseIterable, Identifiable {
     
     var accentColor: Color {
         switch self {
-        case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .seafoam, .sky, .tan, .teal, .yellow: return .black
-        case .indigo, .magenta, .navy, .oxblood, .purple, .green: return .white
+        case .mint, .buttercup, .lavender, .orange, .periwinkle, .seafoam, .sky, .tan, .teal, .green, .yellow: return .black
+        case .indigo, .magenta, .navy, .oxblood, .purple: return .white
         }
     }
     var mainColor: Color {

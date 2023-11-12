@@ -51,7 +51,7 @@ struct MeetingHeaderView: View {
 
 struct MeetingHeaderView_Preview: PreviewProvider {
     static var previews: some View {
-        MeetingHeaderView(secondsElapsed: 60, secondsRemaining: 180, theme: .bubblegum)
+        MeetingHeaderView(secondsElapsed: 60, secondsRemaining: 180, theme: .mint)
             .previewLayout(.sizeThatFits)
     }
 }
