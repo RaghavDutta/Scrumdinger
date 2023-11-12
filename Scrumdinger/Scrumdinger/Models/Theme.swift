@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Theme:String, CaseIterable, Identifiable {
+enum Theme: String, CaseIterable, Identifiable {
     case bubblegum
     case buttercup
     case indigo
@@ -24,17 +24,18 @@ enum Theme:String, CaseIterable, Identifiable {
     case tan
     case teal
     case yellow
+    case green
     
     var accentColor: Color {
         switch self {
         case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
-        case .indigo, .magenta, .navy, .oxblood, .purple: return .white
+        case .indigo, .magenta, .navy, .oxblood, .purple, .green: return .white
         }
     }
     var mainColor: Color {
         Color(rawValue)
     }
-    var name:String {
+    var name: String {
         rawValue.capitalized
     }
     var id: String {
