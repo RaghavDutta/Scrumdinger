@@ -5,3 +5,4 @@ Learning SwiftUI
 - Events
 - Persisting Data
 - Handling Errors and Concurrency
+- Drawing
