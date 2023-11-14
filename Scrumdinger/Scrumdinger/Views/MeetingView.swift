@@ -51,7 +51,7 @@ struct MeetingView: View {
     }
 }
 
-struct MeetingView_Preview:PreviewProvider {
+struct MeetingView_Preview: PreviewProvider {
     static var previews: some View {
         MeetingView(scrum: .constant(DailyScrum.sampleData[0]))
     }

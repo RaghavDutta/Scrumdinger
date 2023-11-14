@@ -7,20 +7,16 @@
 
 import Foundation
 
-struct DailyScrum:Identifiable {
+struct DailyScrum: Identifiable {
     var id: UUID
-    var title:String
+    var title: String
     var attendees: [Attendee]
     var lengthInMinutes: Int
     var lengthInMinutesAsDouble: Double {
-        get {
-            Double(lengthInMinutes)
-        }
-        set {
-            lengthInMinutes = Int(newValue)
-        }
+        get { Double(lengthInMinutes) }
+        set { lengthInMinutes = Int(newValue) }
     }
-    var theme:Theme
+    var theme: Theme
     var history: [History] = []
     
     init(id: UUID=UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
