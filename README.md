@@ -3,3 +3,5 @@ Learning SwiftUI
 - Binding data
 - Observables
 - Events
+- Persisting Data
+- Handling Errors and Concurrency

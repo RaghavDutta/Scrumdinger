@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct ScrumdingerApp: App {
     @StateObject private var store = ScrumStore()
+    @State private var errorWrapper: ErrorWrapper?
     
     var body: some Scene {
         WindowGroup {
@@ -29,7 +30,11 @@ struct ScrumdingerApp: App {
                     fatalError(error.localizedDescription)
                 }
             }
+            .sheet(item: $errorWrapper) {
+                store.scrums = DailyScrum.sampleData
+            } content: { wrapper in
+                ErrorView(errorWrapper: wrapper)
+            }
         }
     }
 }
-
