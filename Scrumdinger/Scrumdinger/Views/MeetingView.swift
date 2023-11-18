@@ -23,7 +23,7 @@ struct MeetingView: View {
                 .fill(scrum.theme.mainColor)
             VStack {
                 MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed , secondsRemaining: scrumTimer.secondsRemaining, theme: scrum.theme)
-                MeetingTimerView(speakers: scrumTimer.speakers, isRecording: false, theme: scrum.theme)
+                MeetingTimerView(speakers: scrumTimer.speakers, isRecording: isRecording, theme: scrum.theme)
                 MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
         }
@@ -33,7 +33,7 @@ struct MeetingView: View {
             startScrum()
         }
         .onDisappear {
-           endScrum()
+            endScrum()
         }
         .navigationBarTitleDisplayMode(.inline)
     }
