@@ -6,3 +6,4 @@ Learning SwiftUI
 - Persisting Data
 - Handling Errors and Concurrency
 - Drawing
+- Transcribing speech to text
